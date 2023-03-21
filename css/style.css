@@ -26,6 +26,9 @@
   flex-direction: row;
   gap: 20px;
   justify-content: flex-start; }
+  @media screen and (max-width: 600px) {
+    .dit-section {
+      display: none; } }
   .dit-section__frist {
     width: 150px;
     height: 150px;
@@ -94,7 +97,8 @@
   animation-duration: 5s;
   animation-delay: 1s;
   animation-direction: normal;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  padding-left: 20px; }
 
 @keyframes input {
   0% {
@@ -105,3 +109,10 @@
     border: 2px solid black; }
   100% {
     border: 2px solid purple; } }
+
+.btn {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background: black;
+  color: white; }
