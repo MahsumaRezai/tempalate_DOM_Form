@@ -13,7 +13,13 @@
   align-items: center;
   margin: 0% auto;
   margin-top: 150px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px gainsboro;
+  animation-name: main;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite; }
 
 .dit-section {
   display: flex;
@@ -62,3 +68,40 @@
     background: black; }
   100% {
     background: purple; } }
+
+@keyframes main {
+  0% {
+    box-shadow: 5px 5px 5px 5px darkcyan; }
+  25% {
+    box-shadow: 5px 5px 5px 5px darkblue; }
+  75% {
+    box-shadow: 5px 5px 5px 5px black; }
+  100% {
+    box-shadow: 5px 5px 5px 5px purple; } }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; }
+
+.input {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  animation-name: input;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite; }
+
+@keyframes input {
+  0% {
+    border: 2px solid darkcyan; }
+  25% {
+    border: 2px solid darkblue; }
+  75% {
+    border: 2px solid black; }
+  100% {
+    border: 2px solid purple; } }
